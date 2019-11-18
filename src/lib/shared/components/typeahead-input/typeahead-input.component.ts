@@ -45,8 +45,8 @@ export class TypeaheadInputComponent implements OnInit {
   @Output() typeaheadValueChange: EventEmitter<any>;
   @Output() typeaheadSelectedValueChange: EventEmitter<any>;
 
-  @ViewChild('autocomplete') autocomplete: MatAutocomplete;
-  @ViewChild(MatAutocompleteTrigger) autocompleteTrigger: MatAutocompleteTrigger;
+  @ViewChild('autocomplete', {static: false}) autocomplete: MatAutocomplete;
+  @ViewChild(MatAutocompleteTrigger, {static: false}) autocompleteTrigger: MatAutocompleteTrigger;
 
   constructor(
     private searchService: SearchService,

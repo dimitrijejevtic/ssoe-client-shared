@@ -17,7 +17,6 @@ import { QuantityComponent } from './components/quantity/quantity.component';
 import { TypeaheadInputComponent } from './components/typeahead-input/typeahead-input.component';
 import { ConfirmActionDirective } from './directives/confirm-action.directive';
 import { FormValidatorDirective } from './directives/form-validator.directive';
-import { HasPermissionDirective } from './directives/has-permission.directive';
 import { NumberFormatterDirective } from './directives/number-formatter.directive';
 import { BooleanEvaluateStatusToStringPipe } from './pipes/boolean-evaluate-status-to-string.pipe';
 import { BooleanToYesNoPipe } from './pipes/booleanToYesNo.pipe';
@@ -51,7 +50,6 @@ import { OptionsScrollDirective } from './components/typeahead-input/options-scr
     TypeaheadInputComponent,
     ConfirmActionDirective,
     FormValidatorDirective,
-    HasPermissionDirective,
     NumberFormatterDirective,
     BooleanEvaluateStatusToStringPipe,
     BooleanToYesNoPipe,
@@ -74,7 +72,6 @@ import { OptionsScrollDirective } from './components/typeahead-input/options-scr
   exports: [
     ConfirmActionDirective,
     FormValidatorDirective,
-    HasPermissionDirective,
     NumberFormatterDirective,
     BooleanEvaluateStatusToStringPipe,
     BooleanToYesNoPipe,

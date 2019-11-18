@@ -4,7 +4,7 @@ import { ErrorMessagesService } from '../../services/error-messages.service';
 import { Utils } from '../../extensions/utils';
 import { MatDialog } from '@angular/material';
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
-import { IErrorMessage } from '../../interfaces/ErrorMessage';
+import { ErrorMessage } from '../../poco/errorMessage';
 
 @Component({
   selector: 'app-error-display',
@@ -19,7 +19,7 @@ export class ErrorDisplayComponent implements OnInit, OnDestroy {
   @Input() showDialog = false;
 
   sources: string[];
-  subscription: Subject<IErrorMessage>;
+  subscription: Subject<ErrorMessage>;
   subscriptionSubscriber: Subscription;
   constructor(private errorService: ErrorMessagesService, public dialog: MatDialog) { }
 

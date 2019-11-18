@@ -1,8 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { CurrencyAmount } from '../models/currencyAmount';
 import { Constants } from '../extensions/constants';
 import { DecimalPipe } from '@angular/common';
 import { Utils } from '../extensions/utils';
+import { CurrencyAmount } from '../POCO/currencyAmount';
 
 @Pipe({
   name: 'currencyAmmount'

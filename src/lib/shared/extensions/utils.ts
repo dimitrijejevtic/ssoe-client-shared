@@ -1,5 +1,5 @@
 import * as cloneDeep from 'lodash/cloneDeep';
-
+// @dynamic
 export class Utils {
     public static isNullEmptyOrUndefined(value) {
         return value === null || value === '' || typeof value === 'undefined' || value === 'null';
