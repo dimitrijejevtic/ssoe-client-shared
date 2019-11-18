@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from './api.service';
 import { ICommandContract } from '../interfaces/ICommandContract';
-import { Observable, of } from 'rxjs';
-import { tap, map, switchMap } from 'rxjs/operators';
 import { TranslationService } from './translation.service';
 
 @Injectable({
