@@ -1,0 +1,16 @@
+<form class="quantity-component" formValidator>
+    <div class="" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="center">
+        <div fxFlex="80%">
+          <mat-form-field>
+              <input matInput type="number" [name]="propertyName+'Amount'" placeholder="{{placeholder}}" [readonly]="isReadOnly" [(ngModel)]="quantity.amount" (ngModelChange)="quantityChange.emit(quantity)" step=".01">
+              <mat-error app-input-validation-message [propertyName]="propertyName+'Amount'"></mat-error>
+          </mat-form-field>
+        </div>
+        <div fxFlex="20%">
+          <mat-form-field>
+            <input matInput type="text" [name]="propertyName+'UnitOfMeasure'" placeholder="{{'Unit of measure'| translate : translationService.cultureCode}}" [(ngModel)]="quantity.unitOfMeasure" (ngModelChange)="quantityChange.emit(quantity)">
+            <mat-error app-input-validation-message [propertyName]="propertyName+'UnitOfMeasure'"></mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+  </form>

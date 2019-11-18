@@ -1,0 +1,21 @@
+<div class="ribbon" *ngIf="!(actionsRibbonService.infoTemplate === undefined
+&& actionsRibbonService.spacerTemplate === undefined
+&& actionsRibbonService.actionsTemplate === undefined
+&& actionsRibbonService.actionsContextTemplate === undefined)">
+  <div class="ribbon-info">
+    <ng-template [ngTemplateOutlet]="actionsRibbonService.infoTemplate">
+    </ng-template>
+  </div>
+  <ng-template [ngTemplateOutlet]="actionsRibbonService.spacerTemplate">
+  </ng-template>
+  <span fxFlex></span><span fxFlex></span>
+  <div class="action ribbon-context-action" [class.last]="actionsRibbonService.actionsTemplate === undefined"
+    [class.has-action]="actionsRibbonService.actionsContextTemplate !== undefined">
+    <ng-template [ngTemplateOutlet]="actionsRibbonService.actionsContextTemplate">
+    </ng-template>
+  </div>
+  <div class="action ribbon-actions" [class.has-action]="actionsRibbonService.actionsTemplate !== undefined">
+    <ng-template [ngTemplateOutlet]="actionsRibbonService.actionsTemplate">
+    </ng-template>
+  </div>
+</div>

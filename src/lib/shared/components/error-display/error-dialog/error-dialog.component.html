@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{'There are errors' | translate: translationService.cultureCode}}</h1>
+<div mat-dialog-content>
+  <div fxLayout="column">
+    <span class="mat-h4 m-t-15 mat-error" *ngFor="let error of data.errors" fxFlex>{{error}}</span>
+  </div>
+</div>
+<div mat-dialog-actions>
+</div>

@@ -1,0 +1,23 @@
+<form class="amountComponent" formValidator>
+  <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="center">
+      <div fxFlex="80%">
+        <mat-form-field>
+          <input matInput [name]="propertyName+'Amount'" type="text" placeholder="{{placeholder}}"
+          [readonly]="isReadOnly"  [(ngModel)]="currencyAmount.amount"
+          #amountInput="ngModel" decimalFormatter
+          (ngModelChange)="currencyAmountChange.emit(currencyAmount)" >
+          <mat-error app-input-validation-message [propertyName]="propertyName+'Amount'"></mat-error>
+        </mat-form-field>
+      </div>
+      <div fxFlex="20%" *ngIf="showCurrency">
+        <mat-form-field>
+          <mat-select [name]="propertyName+'CurrencyCode'" [(ngModel)]="currencyAmount.currencyCode" [disabled]="isReadOnly">
+              <mat-option *ngFor="let currency of currencies" [value]="currency.value">
+                  {{currency.caption}}
+              </mat-option>
+          </mat-select>
+          <mat-error app-input-validation-message [propertyName]="propertyName+'CurrencyCode'"></mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+</form>

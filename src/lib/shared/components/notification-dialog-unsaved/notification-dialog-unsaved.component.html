@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{saveDataText | translate : translateService.cultureCode}}</h1>
+<div mat-dialog-content>
+    <mat-card>
+        <mat-card-content>
+           <div>{{bodyText | translate : translateService.cultureCode}}</div>
+        </mat-card-content>
+    </mat-card>
+
+</div>
+<div mat-dialog-actions class="m-t-10">
+  <button mat-dialog-close mat-raised-button color="accent">{{'No' | translate : translateService.cultureCode}}</button>
+  <button  mat-raised-button color="primary" [mat-dialog-close]="true">{{'Yes' | translate : translateService.cultureCode}}</button>
+</div>

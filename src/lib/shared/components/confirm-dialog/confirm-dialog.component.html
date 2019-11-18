@@ -1,0 +1,20 @@
+<div mat-dialog-title>
+  {{data.title | translate: translateService.cultureCode}}
+</div>
+<div mat-dialog-content>
+  <mat-card>
+    <mat-card-content>
+      <div *ngIf="showText">
+        {{data.text | translate: translateService.cultureCode}}
+      </div>
+      <div *ngIf="showTranslatedText">
+        {{data.translatedText}}
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div mat-dialog-actions class="m-t-10">
+  <span fxFlex></span>
+  <button mat-raised-button color="accent" class="cancelBtn" (click)="close()" *ngIf="showCloseButton">{{data.cancelLabel | translate: translateService.cultureCode}}</button>
+  <button mat-raised-button color="primary" class="doneBtn" (click)="ok()" *ngIf="showOkButton">{{data.confirmLabel | translate: translateService.cultureCode}}</button>
+</div>

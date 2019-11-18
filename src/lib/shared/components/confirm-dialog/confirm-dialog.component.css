@@ -1,0 +1,10 @@
+.mat-card {
+    box-shadow: none;
+    padding-left: 0 !important;
+}
+.mat-dialog-title {
+    padding-left: 15px;
+}
+.mat-dialog-actions {
+    margin-bottom: -14px;
+}

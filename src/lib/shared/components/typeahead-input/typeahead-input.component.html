@@ -1,0 +1,14 @@
+<form formValidator>
+  <mat-form-field>
+    <input matInput [name]="propertyName" placeholder="{{placeholder}}" readonly="{{readonly}}" [matAutocomplete]="autocomplete" (keyup)="search($event)" [(ngModel)]="selectedValue" >
+    <mat-icon matSuffix *ngIf="checkHasValue" class="errorValue" matTooltip="Value not selected">error_outline</mat-icon>
+    <mat-icon matSuffix *ngIf="isLoading" matTooltip="Values loading">autorenew</mat-icon>
+    <mat-autocomplete #autocomplete="matAutocomplete" [displayWith]="displayResultFn" (optionsScroll)="onScroll()" (optionSelected)="optionSelected($event)" showPanel="true">
+      <mat-option *ngFor="let result of results" [value]="result">
+        <span>{{displayResultFn(result)}}</span>
+      </mat-option>
+    </mat-autocomplete>
+    <mat-hint [hidden]="!hasErrors">{{'Type to search' | translate: translateService.cultureCode}}</mat-hint>
+    <mat-error app-input-validation-message [propertyName]="propertyName"></mat-error>
+  </mat-form-field>
+</form>

@@ -1,0 +1,12 @@
+<form formValidator>
+  <mat-form-field>
+    <mat-select [name]="propertyName" placeholder="{{placeholder}}" (selectionChange)="change($event)" [(ngModel)]="classificationValueId" [disabled]="disabled">
+      <mat-optgroup *ngFor="let group of groups" [label]="group.description | translate: translationService.cultureCode">
+        <mat-option *ngFor="let option of group.options" [value]="option.id" matTooltip="{{option.description | translate: translationService.cultureCode}}">
+          {{option.caption | translate: translationService.cultureCode}}
+        </mat-option>
+      </mat-optgroup>
+    </mat-select>
+    <mat-error app-input-validation-message [propertyName]="propertyName"></mat-error>
+  </mat-form-field>
+</form>
