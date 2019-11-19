@@ -1,4 +1,4 @@
-import * as cloneDeep from 'lodash/cloneDeep';
+import cloneDeep from 'lodash/cloneDeep';
 // @dynamic
 export class Utils {
     public static isNullEmptyOrUndefined(value) {

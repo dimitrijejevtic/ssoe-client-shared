@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from '../../lib/material/material.module';
+import { MaterialModule } from '../material/material.module';
 import { ActionsRibbonComponent } from './components/actions-ribbon/actions-ribbon.component';
 import { BaseSelectedTabComponent } from './components/base-selected-tab/base-selected-tab.component';
 import { ClassificationGroupInputComponent } from './components/classification-group-input/classification-group-input.component';

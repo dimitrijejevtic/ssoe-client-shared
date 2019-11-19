@@ -2,7 +2,7 @@
  * Generated bundle index. Do not edit.
  */
 export * from './public-api';
-export { MaterialModule as ɵo } from '../lib/material/material.module';
+export { MaterialModule as ɵo } from './material/material.module';
 export { ActionsRibbonComponent as ɵa } from './shared/components/actions-ribbon/actions-ribbon.component';
 export { BaseSelectedTabComponent as ɵb } from './shared/components/base-selected-tab/base-selected-tab.component';
 export { ClassificationGroupInputComponent as ɵc } from './shared/components/classification-group-input/classification-group-input.component';

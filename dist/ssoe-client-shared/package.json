@@ -1,0 +1,32 @@
+{
+  "name": "ssoe-client-shared",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/cdk": "~8.2.3",
+    "@angular/compiler": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/flex-layout": "8.0.0-beta.27",
+    "@angular/material": "~8.2.3",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "main": "bundles/ssoe-client-shared.umd.js",
+  "module": "fesm5/ssoe-client-shared.js",
+  "es2015": "fesm2015/ssoe-client-shared.js",
+  "esm5": "esm5/ssoe-client-shared.js",
+  "esm2015": "esm2015/ssoe-client-shared.js",
+  "fesm5": "fesm5/ssoe-client-shared.js",
+  "fesm2015": "fesm2015/ssoe-client-shared.js",
+  "typings": "ssoe-client-shared.d.ts",
+  "metadata": "ssoe-client-shared.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
