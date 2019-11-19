@@ -11,51 +11,11 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 
 @NgModule({
-  imports: [
-    MatToolbarModule,
-      MatButtonModule,
-      MatSidenavModule,
-      MatIconModule,
-      MatListModule,
-      MatFormFieldModule,
-      MatInputModule,
-      MatButtonToggleModule,
-      MatChipsModule,
-      MatBadgeModule,
-      MatSlideToggleModule,
-      MatCardModule,
-      MatMenuModule,
-      MatDividerModule,
-      MatProgressSpinnerModule,
-      MatRadioModule,
-      MatCheckboxModule,
-      MatGridListModule,
-      MatTooltipModule,
-      MatExpansionModule,
-      MatSelectModule,
-      MatDatepickerModule,
-      MatProgressBarModule,
-      MatSliderModule,
-      MatStepperModule,
-      MatDialogModule,
-      MatTabsModule,
-      MatNativeDateModule,
-      FlexLayoutModule,
-      MatSnackBarModule,
-      FormsModule,
-      ReactiveFormsModule,
-      MatTableModule,
-      MatPaginatorModule,
-      MatSortModule,
-      MatChipsModule,
-      MatAutocompleteModule,
-      MatTreeModule,
-      DragDropModule
-  ],
   declarations: [],
   exports: [
       MatToolbarModule,
@@ -96,7 +56,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
       MatChipsModule,
       MatAutocompleteModule,
       MatTreeModule,
-      DragDropModule
+      DragDropModule,
+      ScrollingModule
   ]
 })
 export class MaterialModule { }
