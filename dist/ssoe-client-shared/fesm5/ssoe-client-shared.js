@@ -6,7 +6,6 @@ import { catchError, tap, shareReplay, switchMap, takeUntil, debounceTime, disti
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialog, MatSnackBar, MatAutocomplete, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule, MatInputModule, MatButtonToggleModule, MatChipsModule, MatBadgeModule, MatSlideToggleModule, MatCardModule, MatMenuModule, MatDividerModule, MatProgressSpinnerModule, MatRadioModule, MatCheckboxModule, MatGridListModule, MatTooltipModule, MatExpansionModule, MatSelectModule, MatDatepickerModule, MatProgressBarModule, MatSliderModule, MatStepperModule, MatDialogModule, MatTabsModule, MatNativeDateModule, MatSnackBarModule, MatTableModule, MatPaginatorModule, MatSortModule, MatAutocompleteModule, MatTreeModule, MatAutocompleteTrigger, MatPaginatorIntl } from '@angular/material';
 import { NgForm, NgModel, FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 import { __spread, __extends } from 'tslib';
-import { TranslationService as TranslationService$1 } from 'src/lib/shared/services/translation.service';
 import { MatDialog as MatDialog$1 } from '@angular/material/dialog';
 import { MatSnackBar as MatSnackBar$1 } from '@angular/material/snack-bar';
 import { DecimalPipe, DatePipe, CommonModule } from '@angular/common';
@@ -849,7 +848,7 @@ var ErrorDialogComponent = /** @class */ (function () {
     /** @nocollapse */
     ErrorDialogComponent.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Inject, args: [MAT_DIALOG_DATA,] }] },
-        { type: TranslationService$1 }
+        { type: TranslationService }
     ]; };
     return ErrorDialogComponent;
 }());

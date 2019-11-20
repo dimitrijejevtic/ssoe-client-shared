@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash/cloneDeep'), require('@angular/common/http'), require('rxjs'), require('rxjs/operators'), require('@angular/material'), require('@angular/forms'), require('src/lib/shared/services/translation.service'), require('@angular/material/dialog'), require('@angular/material/snack-bar'), require('@angular/common'), require('@angular/cdk/drag-drop'), require('@angular/flex-layout'), require('@angular/cdk/scrolling'), require('@angular/router')) :
-    typeof define === 'function' && define.amd ? define('ssoe-client-shared', ['exports', '@angular/core', 'lodash/cloneDeep', '@angular/common/http', 'rxjs', 'rxjs/operators', '@angular/material', '@angular/forms', 'src/lib/shared/services/translation.service', '@angular/material/dialog', '@angular/material/snack-bar', '@angular/common', '@angular/cdk/drag-drop', '@angular/flex-layout', '@angular/cdk/scrolling', '@angular/router'], factory) :
-    (global = global || self, factory(global['ssoe-client-shared'] = {}, global.ng.core, global.cloneDeep, global.ng.common.http, global.rxjs, global.rxjs.operators, global.ng.material, global.ng.forms, global.translation_service, global.ng.material.dialog, global.ng.material['snack-bar'], global.ng.common, global.ng.cdk['drag-drop'], global.ng['flex-layout'], global.ng.cdk.scrolling, global.ng.router));
-}(this, (function (exports, core, cloneDeep, http, rxjs, operators, material, forms, translation_service, dialog, snackBar, common, dragDrop, flexLayout, scrolling, router) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash/cloneDeep'), require('@angular/common/http'), require('rxjs'), require('rxjs/operators'), require('@angular/material'), require('@angular/forms'), require('@angular/material/dialog'), require('@angular/material/snack-bar'), require('@angular/common'), require('@angular/cdk/drag-drop'), require('@angular/flex-layout'), require('@angular/cdk/scrolling'), require('@angular/router')) :
+    typeof define === 'function' && define.amd ? define('ssoe-client-shared', ['exports', '@angular/core', 'lodash/cloneDeep', '@angular/common/http', 'rxjs', 'rxjs/operators', '@angular/material', '@angular/forms', '@angular/material/dialog', '@angular/material/snack-bar', '@angular/common', '@angular/cdk/drag-drop', '@angular/flex-layout', '@angular/cdk/scrolling', '@angular/router'], factory) :
+    (global = global || self, factory(global['ssoe-client-shared'] = {}, global.ng.core, global.cloneDeep, global.ng.common.http, global.rxjs, global.rxjs.operators, global.ng.material, global.ng.forms, global.ng.material.dialog, global.ng.material['snack-bar'], global.ng.common, global.ng.cdk['drag-drop'], global.ng['flex-layout'], global.ng.cdk.scrolling, global.ng.router));
+}(this, (function (exports, core, cloneDeep, http, rxjs, operators, material, forms, dialog, snackBar, common, dragDrop, flexLayout, scrolling, router) { 'use strict';
 
     cloneDeep = cloneDeep && cloneDeep.hasOwnProperty('default') ? cloneDeep['default'] : cloneDeep;
 
@@ -1037,7 +1037,7 @@
         /** @nocollapse */
         ErrorDialogComponent.ctorParameters = function () { return [
             { type: undefined, decorators: [{ type: core.Inject, args: [material.MAT_DIALOG_DATA,] }] },
-            { type: translation_service.TranslationService }
+            { type: TranslationService }
         ]; };
         return ErrorDialogComponent;
     }());

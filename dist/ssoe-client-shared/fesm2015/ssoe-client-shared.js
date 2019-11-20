@@ -5,7 +5,6 @@ import { throwError, Subject, of, merge } from 'rxjs';
 import { catchError, tap, shareReplay, switchMap, takeUntil, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialog, MatSnackBar, MatAutocomplete, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule, MatInputModule, MatButtonToggleModule, MatChipsModule, MatBadgeModule, MatSlideToggleModule, MatCardModule, MatMenuModule, MatDividerModule, MatProgressSpinnerModule, MatRadioModule, MatCheckboxModule, MatGridListModule, MatTooltipModule, MatExpansionModule, MatSelectModule, MatDatepickerModule, MatProgressBarModule, MatSliderModule, MatStepperModule, MatDialogModule, MatTabsModule, MatNativeDateModule, MatSnackBarModule, MatTableModule, MatPaginatorModule, MatSortModule, MatAutocompleteModule, MatTreeModule, MatAutocompleteTrigger, MatPaginatorIntl } from '@angular/material';
 import { NgForm, NgModel, FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
-import { TranslationService as TranslationService$1 } from 'src/lib/shared/services/translation.service';
 import { MatDialog as MatDialog$1 } from '@angular/material/dialog';
 import { MatSnackBar as MatSnackBar$1 } from '@angular/material/snack-bar';
 import { DecimalPipe, DatePipe, CommonModule } from '@angular/common';
@@ -696,7 +695,7 @@ ErrorDialogComponent.decorators = [
 /** @nocollapse */
 ErrorDialogComponent.ctorParameters = () => [
     { type: undefined, decorators: [{ type: Inject, args: [MAT_DIALOG_DATA,] }] },
-    { type: TranslationService$1 }
+    { type: TranslationService }
 ];
 if (false) {
     /** @type {?} */

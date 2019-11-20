@@ -1,5 +1,5 @@
 import { OnInit } from '@angular/core';
-import { TranslationService } from 'src/lib/shared/services/translation.service';
+import { TranslationService } from '../../../services/translation.service';
 export interface ErrorData {
     errors: [];
 }

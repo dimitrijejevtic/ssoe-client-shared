@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material';
-import { TranslationService } from 'src/lib/shared/services/translation.service';
+import { TranslationService } from '../../../services/translation.service';
 
 export interface ErrorData {
   errors: [];
