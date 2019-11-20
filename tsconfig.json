@@ -24,6 +24,12 @@
       ],
       "ssoe-client-shared/*": [
         "dist/ssoe-client-shared/*"
+      ],
+      "@angular/*":[
+        "./node_modules/@angular"
+      ],
+      "rxjs":[
+        "./node_modules/rxjs"
       ]
     }
   },
