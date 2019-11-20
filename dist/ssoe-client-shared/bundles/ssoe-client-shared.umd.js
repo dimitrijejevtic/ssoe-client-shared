@@ -4361,7 +4361,6 @@
     exports.SearchService = SearchService;
     exports.SharedModule = SharedModule;
     exports.TranslatePipe = TranslatePipe;
-    exports.TranslationKeyContract = TranslationKeyContract;
     exports.TranslationService = TranslationService;
     exports.UnsavedDataNotificationService = UnsavedDataNotificationService;
     exports.ɵa = ActionsRibbonComponent;
